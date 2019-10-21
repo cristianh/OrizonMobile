@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/imagehover.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="persona.html">Persona</a>
+        <a href="empresa.html">Empresa</a>
+        <!-- <a href="#nosotros">Nosotros</a> -->
+        <div class="dropdown">
+            <button onclick="navegar()" class="dropbtn">Nosotros
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="politica-datos.html">Politica de tratamiento de datos</a>
+                <a href="pqrs.html">PRQS</a>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <form action="/action_page.php">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Buscar..." name="search">
+            </form>
+        </div>
+    </div>
+    <div id="navbar">
+        <span href="#default" id="logo">OrizonMobile<br><span
+                style="font-size: 14px;margin-top: -12px;text-align: center" id="logo-subtext">The Unlimited
+                Network</span></span>
+        <div id="navbar-right">
+            <a href="internet.html">Internet</a>
+            <a href="telefonia.html">Telefonia</a>
+            <a href="productos.html">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contactenos.html">Soporte</a>
+        </div>
+    </div>
+    <ul class="breadcrumb">
+        <li><a href="index.html" target="_blank">Inicio</a></li>
+        <li>Persona</li>
+    </ul>
+    <section>
+        <div class="container-imagen">
+            <div class="hero-imagen">
+                <div class="hero-text-left">
+                    <span>Pensando en lo que <br> necesitas</span>
+                    <h2>Productos y sevicios pensados para ti</h2>
+                    <button>Mas información</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="column-team">
+                <div class="card">
+                    <figure class="imghvr-fade">
+                        <img src="/imagenes/blur-1853302_1920.jpg">
+                        <figcaption>
+                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book.</h3>
+                        </figcaption>
+                    </figure>
+                    <div class="container-info">
+                        <h2>Prepago</h2>
+                        <p><button class="button2" onclick="irPrepagoPersona()">Mas información</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-team">
+                <div class="card">
+                    <figure class="imghvr-fade">
+                        <img src="/imagenes/iphone-410324_1920.jpg">
+                        <figcaption>
+                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book.</h3>
+                        </figcaption>
+                    </figure>
+                    <div class="container-info">
+                        <h2>Pospago</h2>
+                        <p><button class="button2" onclick="irPospagoPersona()">Mas información</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column-team">
+                <div class="card">
+                    <figure class="imghvr-fade">
+                        <img src="./imagenes/ipad-820272_1920.jpg">
+                        <figcaption>
+                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book.</h3>
+                        </figcaption>
+                    </figure>
+                    <div class="container-info">
+                        <h2>Celulares y tecnologia</h2>
+                        <p><button class="button2" onclick="irCelytecnologia()">Mas información</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="parallax">
+            <div style="vertical-align:middle;color:white;position: absolute;padding:40px 30px;margin:15% auto;height:139px;background-color:rgba(62, 96, 111, 1);font-size:18px;border-color: white;border-style: double;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam quo, repellat accusantium excepturi maiores non. Soluta doloribus harum adipisci eaque magnam beatae, modi ad accusantium numquam consequuntur tenetur consectetur?
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./imagenes/imagen-banner-srervice.png" style="width:100%">
+                <div class="text" style="text-align: left">EL PODER DE LA TECNOLOGIA AL ALCANDE DE TODOS</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+    </section>
+
+
+    <section>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="column-footer">
+                    <h2><b>Lo que tenemos para ti</b></h2>
+                    <ul class="menu-footer">
+                        <li>Inicio</li>
+                        <li>Telefonia</li>
+                        <li>Productos</li>
+                        <li>Servicios</li>
+                        <li>Internet</li>
+                    </ul>
+                </div>
+                <div class="column-footer">
+                    <h2><b>Nosotros</b></h2>
+                    <ul class="menu-footer">
+                        <li>Empresa</li>
+                        <li>Legal</li>
+                    </ul>
+                    <br>
+                    <h2><b>Servicios</b></h2>
+                    <ul class="menu-footer">
+                        <li>Persona</li>
+                        <li>Empresa</li>
+                    </ul>
+                </div>
+                <div class="column-footer">
+                    <ul class="social-medias">
+                        <li><i class="fa fa-facebook fa-3x"></i></li>
+                        <li><i class="fa fa-twitter fa-3x"></i></li>
+                        <li><i class="fa fa-instagram fa-3x"></i></li>
+                    </ul>
+                    <form id="form-newsletter" action="/action_page.php">
+
+
+                        <div>
+                            <input type="text" placeholder="Email address" name="mail" required>
+                        </div>
+
+                        <div class="container">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+
+</html>
