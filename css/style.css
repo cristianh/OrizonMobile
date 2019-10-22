@@ -441,6 +441,19 @@ img {
     position: relative;
 }
 
+
+
+.hero-imagen11 {
+    border: white solid 3px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/apple-cell-phone-cellphone-607812.jpg");
+    width: 100%;
+    height: 29pc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .container-imagen button {
     border: none;
     outline: 0;
@@ -734,7 +747,40 @@ img {
     width: 100%;
 }
 
+.button3 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #91AA9D;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.button4 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #193441;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
 .button2:hover {
+    background-color: #D1DBBD;
+}
+
+.button3:hover {
+    background-color: #D1DBBD;
+}
+
+.button4:hover {
     background-color: #D1DBBD;
 }
 
@@ -1187,3 +1233,43 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* tab cotizacion */
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.3%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Internet {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/network-3357642_1920.jpg");
+    width: 100%;
+    height: 21pc;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15% 12%;}
+#Telefonia {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/computer-1846056_1920.jpg");width: 100%;
+    height: 21pc;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15% 12%;}
+#ProductoEmpresariales {background-color:blue;}
+/* #Oslo {background-color:orange;} */

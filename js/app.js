@@ -63,6 +63,14 @@ function irCelytecnologia() {
     window.location.href = 'celytecnologia.html';
 }
 
+function iracotizar(){
+    window.location.href = 'cotizar.php';
+}
+
+function iraComprar(id){
+    window.location.href = 'comprar.html?id='+id;
+}
+
 /**
  * @function Funcion  que se encarga de buscar una tema-pregunta en la pagina PQRS.
  */
@@ -129,6 +137,23 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
+}
+
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
 
 }
+// Get the element with id="defaultOpen" and click on it
+//document.getElementById("defaultOpen").click();
+
 this.load();
