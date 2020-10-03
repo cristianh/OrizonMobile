@@ -14,8 +14,8 @@
 <body>
 
     <div class="topnav">
-        <a href="#news">Persona</a>
-        <a href="#contact">Empresa</a>
+        <a href="persona.html">Persona</a>
+        <a href="empresa.html">Empresa</a>
         <!-- <a href="#nosotros">Nosotros</a> -->
         <div class="dropdown">
             <button class="dropbtn">Nosotros
@@ -47,7 +47,7 @@
         </div>
     </div>
     <ul class="breadcrumb">
-        <li><a href="index.html" target="_blank">Inicio</a></li>
+        <li><a  href="index.html">Inicio</a></li>
         <li>Telefonia</li>
     </ul>
 
@@ -62,6 +62,7 @@
             </div>
         </div>
     </section>
+    
     <section>
         <h1 class="title-price">Soluciones efectivas para las empresas de hoy</h1>
         <hr style="width:34%">
@@ -70,40 +71,191 @@
         <div class="row">
             <div class="column-team">
                 <div class="card">
-                    <img src="./imagenes/antenna-498438_1920.jpg" alt="Jane" style="width:100%">
+                    <img src="./imagenes/antenna-498438_1920.jpg" alt="Telegonia fija y movil" style="width:100%">
                     <div class="container-info">
                         <h2>Telefonia fija y movil</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam vero odio nobis nisi. Laborum modi placeat itaque porro, dolorum rem saepe dignissimos, labore natus ad, aliquid sunt expedita assumenda?</p>
-                        <p><button class="button3" onclick="iracotizar()">COTIZAR</button></p>
-                        <p><button class="button">Mas información</button></p>
+                        <!-- <p><button class="button3" onclick="navegar('cotizar')">COTIZAR</button></p> -->
+                        <p><button class="button" onclick="navegar('telymovi')">Mas información</button></p>
                     </div>
                 </div>
             </div>
 
             <div class="column-team">
                 <div class="card">
-                    <img src="./imagenes/fiber-optic-2749588_1280.jpg" alt="Mike" style="width:100%">
+                    <img src="./imagenes/fiber-optic-2749588_1280.jpg" alt="Larga distancia" style="width:100%">
                     <div class="container-info">
                         <h2>Larga distancia</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque vel quasi impedit repellat? Vitae incidunt porro reprehenderit maxime? Odio molestias totam necessitatibus, asperiores consequatur accusantium ex? Molestiae quisquam
                             ex aut?</p>
-                        <p><button class="button3" onclick="iracotizar()">COTIZAR</button></p>
-                        <p><button class="button">Mas información</button></p>
+                        <!-- <p><button class="button3" onclick="navegar('cotizar')">COTIZAR</button></p> -->
+                        <p><button class="button" onclick="navegar('largadistancia')">Mas información</button></p>
                     </div>
                 </div>
             </div>
             <div class="column-team">
                 <div class="card">
-                    <img src="./imagenes/phone-1074238_1920.jpg" alt="John" style="width:100%;">
+                    <img src="./imagenes/phone-1074238_1920.jpg" alt="Voz ip" style="width:100%;">
                     <div class="container-info">
                         <h2>Voz Ip</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis quibusdam dolorem dicta iusto nemo autem ab aut quidem praesentium impedit aliquid provident illo fugit recusandae, eius illum minus totam!</p>
-                        <p><button class="button3" onclick="iracotizar()">COTIZAR</button></p>
-                        <p><button class="button">Mas información</button></p>
+                        <!-- <p><button class="button3" onclick="navegar('cotizar')">COTIZAR</button></p> -->
+                        <p><button class="button" onclick="navegar('vozip')">Mas información</button></p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section>
+        <hr style="width:34%">
+        <h1 class="title-price">Celulares</h1>
+        <hr style="width:34%">
+        <p style="text-align:center">Todos a la medida de tus necesidades</p>
+        <br>
+        <!-- Fila 1 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-Nokia.png" alt="Avatar" style="width: 100%;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1><b>NOKIA</b></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum excepturi odio minus
+                        explicabo, dolor maxime hic nam? Eligendi, ab eveniet expedita at iure voluptatum quasi dolorum
+                        asperiores quae officiis?</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('1')">COMPRAR</button></p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-apple.png" alt="Avatar" style="width: 288px;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1><b>APPLE</b></h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem perferendis fugit nesciunt?
+                        Nesciunt, impedit porro? Ipsam, animi quasi. Inventore itaque deserunt doloribus molestiae iusto
+                        sequi libero rem deleniti optio distinctio.</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('2')">COMPRAR</button></p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-Samsung.png" alt="Avatar" style="width: 288px;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1><b>SAMSUNG</b></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas expedita ipsum possimus eos
+                        beatae illum sapiente ut aliquid quidem quisquam. Atque impedit dolor blanditiis, facere ad
+                        libero repellat adipisci iure!</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('3')">COMPRAR</button></p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-Lanix.png" alt="Avatar" style="width: 288px;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>LANIX</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias aut qui dolore voluptatum quasi,
+                        minima, mollitia sapiente esse ratione perspiciatis nostrum? Reiciendis accusamus, sit fugit
+                        quos nobis dolores a eum!</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('4')">COMPRAR</button></p>
+        </div>
+        <br>
+        <br>
+        <!-- Fin  Fila 1 -->
+        <hr style="width:34%">
+        <!-- Fila 2 -->
+        <br>
+        <br>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-Alcatel.png" alt="Avatar" style="width: 288px;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1><b>ALCATEL</b></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum excepturi odio minus
+                        explicabo, dolor maxime hic nam? Eligendi, ab eveniet expedita at iure voluptatum quasi dolorum
+                        asperiores quae officiis?</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('5')">COMPRAR</button></p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-Huawei.png" alt="Avatar" style="width: 288px;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1><b>HAWEI</b></h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem perferendis fugit nesciunt?
+                        Nesciunt, impedit porro? Ipsam, animi quasi. Inventore itaque deserunt doloribus molestiae iusto
+                        sequi libero rem deleniti optio distinctio.</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('6')">COMPRAR</button></p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-Lg.png" alt="Avatar" style="width: 288px;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1><b>LG</b></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas expedita ipsum possimus eos
+                        beatae illum sapiente ut aliquid quidem quisquam. Atque impedit dolor blanditiis, facere ad
+                        libero repellat adipisci iure!</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('7')">COMPRAR</button></p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./imagenes/celulares/Celular-Motorola.png" alt="Avatar" style="width: 288px;
+                    height: 232px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>MOTOROLA</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias aut qui dolore voluptatum quasi,
+                        minima, mollitia sapiente esse ratione perspiciatis nostrum? Reiciendis accusamus, sit fugit
+                        quos nobis dolores a eum!</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+            <p><button class="button3" onclick="iraComprar('8')">COMPRAR</button></p>
+        </div>
+        <!-- Fin Fila 2 -->
+        <br>
+        <br>
+        <br>
+        <hr style="width:34%">
+        <br>
+        <br>
+        <br>
     </section>
     <section>
 
@@ -125,24 +277,25 @@
                 <div class="column-footer">
                     <h2><b>Lo que tenemos para ti</b></h2>
                     <ul class="menu-footer">
-                        <li>Inicio</li>
-                        <li>Telefonia</li>
-                        <li>Productos</li>
-                        <li>Servicios</li>
-                        <li>Internet</li>
+                        <li><a href="internet.html">Internet</a></li>
+                        <li><a href="telefonia.html">Telefonia</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
                     </ul>
                 </div>
                 <div class="column-footer">
                     <h2><b>Nosotros</b></h2>
                     <ul class="menu-footer">
-                        <li>Empresa</li>
-                        <li>Legal</li>
+                        <li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="persona.html">Persona</a></li>
                     </ul>
                     <br>
+                    <br>
                     <h2><b>Servicios</b></h2>
-                    <ul class="menu-footer">
-                        <li>Persona</li>
-                        <li>Empresa</li>
+                     <ul class="menu-footer">
+                        <li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="persona.html">Persona</a></li>
                     </ul>
                 </div>
                 <div class="column-footer">

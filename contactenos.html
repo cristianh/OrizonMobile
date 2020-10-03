@@ -8,7 +8,27 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+    <script>
+       
+    </script>
+    <style>
+        #respuesta{
+            display: none;
+        }
+        
+        .hidden{
+            display: none;
+        }
 
+        @keyframes fadeOut {
+            0% {opacity: 1;}
+            95% {opacity: 0;}
+            100% {display: none;}
+         }
+      
+    </style>
 </head>
 
 <body>
@@ -18,8 +38,8 @@
         <a href="#empresa.html">Empresa</a>
         <!-- <a href="#nosotros">Nosotros</a> -->
         <div class="dropdown">
-            <button onclick="navegar()" class="dropbtn">Nosotros
-              <i class="fa fa-caret-down"></i>
+            <button onclick="navegar('nosotros')" class="dropbtn">Nosotros
+                <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
                 <a href="politica-datos.html">Politica de tratamiento de datos</a>
@@ -47,7 +67,7 @@
         </div>
     </div>
     <ul class="breadcrumb">
-        <li><a href="index.html" target="_blank">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li>Soporte</li>
     </ul>
     <section>
@@ -73,8 +93,12 @@
                             <img src="./imagenes/contactagent.jpg" alt="Jane" style="width:100%">
                             <div class="container-info">
                                 <h2>Jane Doe</h2>
-                                <p class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit, dui arcu cubilia justo sed laoreet sem, fermentum porta blandit nostra in tortor. Turpis ligula scelerisque nisi lacus gravida cum, nam id orci feugiat condimentum
-                                    bibendum, dui potenti sed augue velit. Vitae duis elementum himenaeos ac fermentum netus dui malesuada, viverra justo morbi cubilia pharetra suscipit enim praesent nullam, purus ullamcorper class mauris curae pellentesque
+                                <p class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit, dui arcu
+                                    cubilia justo sed laoreet sem, fermentum porta blandit nostra in tortor. Turpis
+                                    ligula scelerisque nisi lacus gravida cum, nam id orci feugiat condimentum
+                                    bibendum, dui potenti sed augue velit. Vitae duis elementum himenaeos ac fermentum
+                                    netus dui malesuada, viverra justo morbi cubilia pharetra suscipit enim praesent
+                                    nullam, purus ullamcorper class mauris curae pellentesque
                                     aenean.
                                 </p>
 
@@ -84,26 +108,34 @@
 
                 </div>
                 <div id="form" class="column-tow">
-                    <form action="/action_page.php">
+                    <form>
                         <label for="fname">Nombre</label>
-                        <input type="text" id="fname" name="Nombre" placeholder="Su nombre..">
+                        <input type="text" id="fname" name="nombre_usuario" placeholder="Su nombre..">
 
-                        <label for="lname">Apellido</label>
-                        <input type="text" id="lname" name="Apellido" placeholder="Su apellido..">
+                        <label for="lapellido">Apellido</label>
+                        <input type="text" id="lapellido" name="apellido_usuario" placeholder="Su apellido..">
+
+                        <label for="lcorreo">Correo</label>
+                        <input type="text" id="lcorreo" name="correo" placeholder="Su apellido..">
 
                         <label for="ciudad">Ciudad</label>
-                        <select id="country" name="ciudad">
-                                        <option value="australia">Seleccione</option>
-                                        <option value="australia">Colombia</option>
-                                        <option value="canada">Peru</option>
-                                        <option value="usa">Chile</option>
-                                      </select>
+                        <select id="ciudad" name="ciudad">
+                            <option value="australia">Seleccione</option>
+                            <option value="australia">Colombia</option>
+                            <option value="canada">Peru</option>
+                            <option value="usa">Chile</option>
+                        </select>
 
-                        <label for="subject">Enviar</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <label for="subject">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="mensaje.." style="height:200px"></textarea>
 
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" onclick="enviar_email(event)">
                     </form>
+                    <div id="respuesta">
+                    <fieldset style="background: #D5EFC2;border-color: #49A94A;color: green !important;">
+                        <p class="title" style="color:green !important;padding:10px 10px;">Mensaje enviado.</p>
+                    </fieldset>
+                    </div>
                 </div>
             </div>
 
@@ -116,7 +148,8 @@
             <img src="./imagenes/imagen-banner.png" alt="Notebook" style="width:100%;">
             <div class="content-textimagen">
                 <h1>Apollamos el desarrollo del pais</h1>
-                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
+                    expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
             </div>
         </div>
     </section>
@@ -130,24 +163,24 @@
                 <div class="column-footer">
                     <h2><b>Lo que tenemos para ti</b></h2>
                     <ul class="menu-footer">
-                        <li>Inicio</li>
-                        <li>Telefonia</li>
-                        <li>Productos</li>
-                        <li>Servicios</li>
-                        <li>Internet</li>
+                        <li><a href="internet.html">Internet</a></li>
+                        <li><a href="telefonia.html">Telefonia</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
                     </ul>
                 </div>
                 <div class="column-footer">
                     <h2><b>Nosotros</b></h2>
                     <ul class="menu-footer">
-                        <li>Empresa</li>
-                        <li>Legal</li>
+                        <li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="persona.html">Persona</a></li>
                     </ul>
                     <br>
                     <h2><b>Servicios</b></h2>
                     <ul class="menu-footer">
-                        <li>Persona</li>
-                        <li>Empresa</li>
+                        <li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="persona.html">Persona</a></li>
                     </ul>
                 </div>
                 <div class="column-footer">
@@ -172,6 +205,7 @@
         </div>
     </section>
     <script src="js/app.js"></script>
+    <script src="js/enviar_correo.js"></script>
 </body>
 
 
